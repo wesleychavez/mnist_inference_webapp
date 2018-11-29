@@ -4,8 +4,8 @@
 #
 # This model achieves about 99% accuracy on the test set.
 #
-# This model takes about 45 minutes per epoch on a 2018 MacBook Pro and
-#                  about 3 minutes per epoch on a AWS EC2 p2.xlarge
+# This model takes about 45 minutes per epoch on a 2018 MacBook Pro (CPU) and
+#                  about 30 seconds per epoch on a AWS EC2 p2.xlarge (GPU)
 #
 # - Wesley Chavez, 11/28/18
 

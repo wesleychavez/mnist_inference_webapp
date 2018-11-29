@@ -19,7 +19,7 @@ docker run -p 5000:5000 mnist_inference
 python train.py
 ```
 `config_train.py` has a couple model hyperparameters.
-`train.py` builds a specific CNN, trains it, and saves the best model according to validation accuracy. The MNIST test set (10k images) is used as validation.  This model achieves about 99% accuracy on the MNIST test set.  This model takes about 45 minutes per epoch on a 2018 MacBook Pro and about 3 minutes per epoch on a AWS EC2 p2.xlarge
+`train.py` builds a specific CNN, trains it, and saves the best model according to validation accuracy. The MNIST test set (10k images) is used as validation.  This model achieves about 99% accuracy on the MNIST test set.  This model takes about 45 minutes per epoch on a 2018 MacBook Pro and about 30 seconds per epoch on a AWS EC2 p2.xlarge
 
 Requires:
 - python 3

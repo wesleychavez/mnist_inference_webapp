@@ -77,7 +77,9 @@ def upload():
         # Process your result for human
         # pred_class = preds.argmax(axis=-1)            # Simple argmax
         #pred_class = decode_predictions(preds, top=1)   # ImageNet Decode
-        result = "I'm " + str(np.max(preds)*100) + "% certain it's a " + str(np.argmax(preds)) + "."               # Convert to string
+
+        # Convert to string
+        result = "I'm " + str(np.max(preds)*100) + "% certain it's a " + str(np.argmax(preds)) + "."               
         return result
     return None
 
