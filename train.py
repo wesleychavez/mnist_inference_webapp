@@ -69,5 +69,5 @@ y_val = np_utils.to_categorical(y_val, 10)
 
 # Create and fit the model; the model at the epoch with the best validation accuracy is saved.
 model = create_model()
-checkpointer = ModelCheckpoint(filepath='model.hdf5', monitor='val_acc', verbose=1, save_best_only=True, period=1)
+checkpointer = ModelCheckpoint(filepath='flask-app/models/model.hdf5', monitor='val_acc', verbose=1, save_best_only=True, period=1)
 model.fit(x=x_train, y=y_train, batch_size=config.batch_size, epochs=config.epochs, callbacks=[checkpointer], validation_data=(x_val,y_val))
